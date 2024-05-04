@@ -11,6 +11,10 @@ public class Evaluator {
 		this.syntaxTree = buildSyntaxTree(expressionText, null);
 	}
 	
+	public Evaluator(final String expressionText, final VariablesScope variables) {
+		this.syntaxTree = buildSyntaxTree(expressionText, variables);
+	}
+	
 	public int evaluate() {
 		return this.syntaxTree.interpret();
 	}

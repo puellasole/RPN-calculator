@@ -20,7 +20,7 @@ public final class VariablesScope {
 		throw new IllegalArgumentException("No expression associated with variable " + name + "!");
 	}
 	
-	public class Builder{
+	public static class Builder{
 		
 		private final Map<String, Expression> variables;
 		

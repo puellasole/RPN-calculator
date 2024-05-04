@@ -12,7 +12,7 @@ final class Minus implements Expression{
 
 	@Override
 	public int interpret() {
-		return this.leftOperand.interpret() - this.rightOperand.interpret();
+		return this.rightOperand.interpret() - this.leftOperand.interpret();
 	}
 
 }
